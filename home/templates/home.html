@@ -121,4 +121,25 @@
                 </div>
             </div>
 </section>
+<!----------------------------------------------  SECCION PORTFOLIO ---------------------------------------------->
+<section id="portfolio" class="portfolio">
+    <h2>PORTFOLIO</h2>
+
+    <div class="galeria">
+        {% for projects in projects %}
+
+        <div class="proyecto">
+            <a href="{{projects.url}}">
+                <img src="{{projects.image.url}}" alt="{{projects.title}}">
+                <div class="overlay">
+                    <h3>{{projects.title}}</h3>
+                    <p>{{projects.description}}</p>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+
+</section>
+
 {% endblock %}
