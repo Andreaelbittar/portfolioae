@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<h1>HOME</h1>
+{% for projects in projects %}
+
+<h1>{{projects.title}}</h1>
+<p>{{projects.description}}</p>
+<img src="{{projects.image.url}}" alt="{{projects.title}">
+<a href="{{project.url}}">Link</a>
+{% endfor %}
+
+{% endblock %}
