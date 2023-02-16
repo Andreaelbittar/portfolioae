@@ -87,7 +87,6 @@ html{
     font-weight:600;
     letter-spacing:1px;
   }
-  
   .nav ul li a:after {
     content: "";
     display: block;
@@ -100,4 +99,258 @@ html{
   }
   .navigation{
     display: none;
+  }
+  /* INICIO */
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(img/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  .inicio .banner{
+    padding: 20px;
+    background-color: #D9D9D9;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 250px;
+    box-shadow: 0px 0px 60px 23px rgba(122,122,122,0.48);
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: max-content;
+  } 
+    .title{
+    margin-top: 40px;
+    font-size: 72px;
+    font-family: 'Dorsa', sans-serif;
+    color: black;
+  }
+  .description{
+    font-size: 50px;
+    font-weight: normal;
+    font-family: 'Dorsa', sans-serif;
+    color: black;
+  }
+  .redes a{
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+  }
+  .redes a:hover{
+    background-color: black;
+    transition: .3s;
+    color: white;
+  }
+  /* SKILLS */
+.skills{
+    width: 100%;
+    color: #fff;
+    padding-bottom:2.5em;
+  }
+  .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+  }
+  .skills h2{
+    font-size: 120px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    color:black;
+    font-family: 'Dorsa', sans-serif;
+    letter-spacing: 3px;
+  }
+  .fila{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .fila2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .col{
+    width: 50%;
+    margin-left: 60px;
+  }
+  .col2{
+    width: 50%;
+    margin-right: 60px;
+  }
+  .col h3{
+    font-size: 90px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+    color:black;
+    font-family: 'Dorsa', sans-serif;
+    letter-spacing:5px;
+  }
+  .col2 h3{
+    font-size: 90px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+    color:black;
+    font-family: 'Dorsa', sans-serif;
+    letter-spacing:5px;
+  }
+  .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color:black;
+    font-family: 'Dorsa', sans-serif;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+  }
+  .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 8px
+  }
+  .progreso{
+    background-color: #D9D9D9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    color: black;
+    font-family: 'Dorsa', sans-serif;
+    font-weight: bold;
+  }
+  .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 30px;
+  }
+  /* Estas clases se agregaran dinamicamente mediante javascript */
+  .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+  }
+  @keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 75%;}
+  }
+  .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+  }
+  @keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 89%;}
+  }
+  .photoshop{
+    width: 0%;
+    animation: 2s photoshop forwards;
+  }
+  @keyframes photoshop {
+    0%{width: 0%;}
+    100%{width: 95%;}
+  }
+  .wordpress{
+    width: 0%;
+    animation: 2s wordpress forwards;
+  }
+  @keyframes wordpress {
+    0%{width: 0%;}
+    100%{width: 81%;}
+  }
+  .drupal{
+    width: 0%;
+    animation: 2s drupal forwards;
+  }
+  @keyframes drupal {
+    0%{width: 0%;}
+    100%{width: 55%;}
+  }
+  .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+  }
+  @keyframes comunicacion {
+    0%{width: 0%;}
+    100%{width: 80%;}
+  }
+  
+  .skills .skill .trabajo{
+    width: 0%;
+    animation: 2s trabajo forwards;
+  }
+  @keyframes trabajo {
+    0%{width: 0%;}
+    100%{width: 70%;}
+  }
+  .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+  }
+  @keyframes creatividad {
+    0%{width: 0%;}
+    100%{width: 99%;}
+  }
+  .dedicacion{
+    width: 0%;
+    animation: 2s dedicacion forwards;
+  }
+  @keyframes dedicacion {
+    0%{width: 0%;}
+    100%{width: 65%;}
+  }
+  .proyect{
+    width: 0%;
+    animation: 2s proyect forwards;
+  }
+  @keyframes proyect {
+    0%{width: 0%;}
+    100%{width: 94%;}
+  }
+  .titleskills{
+    display: flex;
+    transform: rotate(89.95deg);
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    width: max-content;
+    color:black;
+    font-family: 'Notable', sans-serif;
+    letter-spacing:5px;
+  }
+  .titleskills2{
+    display: flex;
+    transform: rotate(-90.11deg);
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    width: max-content;
+    color:black;
+    font-family: 'Notable', sans-serif;
+    letter-spacing:5px;
   }
