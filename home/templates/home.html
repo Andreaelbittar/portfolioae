@@ -1,14 +1,26 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-
-<h1>HOME</h1>
-{% for projects in projects %}
-
-<h1>{{projects.title}}</h1>
-<p>{{projects.description}}</p>
-<img src="{{projects.image.url}}" alt="{{projects.title}">
-<a href="{{project.url}}">Link</a>
-{% endfor %}
+<!----------------------- HEADER----------------------->
+<header class="header">
+    <nav class="nav">
+        <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <div class="name">
+                <h2 class="hola border">Andrea Elbittar</h2>
+                <h2 class="wave">Andrea Elbittar</h2>
+            </div>
+            <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+            <div class="navigation">
+                <div class="menuToggle"></div>
+                <div class="menu"></div>
+            </div>
+        </ul>
+    </nav>
+</header>
 
 {% endblock %}

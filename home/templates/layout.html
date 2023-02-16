@@ -1,19 +1,32 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dorsa&family=Notable&family=WindSong&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Andrea Elbittar</title>
 </head>
 <body>
-    <h1>navbar</h1>
+
     {% block content %}
     {% endblock %}
-    <footer>
-        <h2>contenido</h2>
-    </footer>
+   
 </body>
 </html>
+ <!-- 
+<h1>HOME</h1>
+{% for projects in projects %}
+
+<h1>{{projects.title}}</h1>
+<p>{{projects.description}}</p>
+<img src="{{projects.image.url}}" alt="{{projects.title}">
+<a href="{{project.url}}">Link</a>
+{% endfor %}-->
