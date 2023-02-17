@@ -758,7 +758,8 @@ footer .arriba:hover {
 
 .seccion-about-me {
   width: 100vw;
-  height: 2100px;
+  height: max-content;
+  margin-bottom: 10em;
 }
 
 .contenedor {
@@ -768,6 +769,7 @@ footer .arriba:hover {
   display: flex;
   justify-content: space-between;
   border-radius: 0 0 0 120px;
+  box-shadow: 19px 17px 14px rgba(0, 0, 0, 0.25);
 
 }
 
@@ -781,17 +783,21 @@ footer .arriba:hover {
   font-family: 'WindSong', cursive;
   font-size: 19em;
   margin-left: -30px;
+  color:purple;
+  text-shadow: 19px 6px 16px rgba(0, 0, 0, 0.25);
 }
 
 .iam {
   font-family: 'WindSong', cursive;
   padding-top: 2em;
+  
 }
-
+.iam h2 {
+  font-size: 50px;
+}
 .iam h2 span {
   display: block;
 }
-
 .box-text {
   background-color: #817D7D;
   width: 50vw;
@@ -800,18 +806,16 @@ footer .arriba:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 19px 17px 14px rgba(0, 0, 0, 0.25);
 }
-
 .box-text p {
   width: 70%;
   text-align: justify;
 }
-
 .dato {
   padding-top: 1.5em;
   width: 50vw;
 }
-
 .dato h2 {
   font-family: 'Dorsa', sans-serif;
   text-align: center;
@@ -821,14 +825,12 @@ footer .arriba:hover {
   color: black;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .line {
   height: 2px;
   background-color: #D9D9D9;
   width: 25vw;
   margin-top: 5px;
 }
-
 .container {
   display: flex;
   justify-content: space-evenly;
@@ -849,11 +851,14 @@ footer .arriba:hover {
 }
 .box p{
   color: #131517;
-  font-size: 25px;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Dorsa', sans-serif;
+  letter-spacing: 2px;
 }
 .box h2 {
   font-family: 'Dorsa', sans-serif;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
   letter-spacing: 2px;
   text-transform:uppercase;
@@ -862,3 +867,13 @@ footer .arriba:hover {
   margin-top: auto;
   margin-bottom: auto;
 }
+.box .prof {
+  font-family: 'WindSong', cursive;
+  font-size: 35px;
+  font-weight: bold;
+  color: purple; 
+}
+.box .prof  {
+	animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
