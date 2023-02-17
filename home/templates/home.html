@@ -5,16 +5,19 @@
 <header class="header">
     <nav class="nav">
         <ul>
-            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li><a class="menu" href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a class="menu" href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a class="menu" href="#skills" onclick="seleccionar()">SKILLS</a></li>
             <div class="name">
                 <h2 class="hola border">Andrea Elbittar</h2>
                 <h2 class="wave">Andrea Elbittar</h2>
             </div>
-            <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+            <li><a class="menu" href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+            <li><a class="menu" href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <button class="buttoncv">
+                Descargar CV
+                <span class="overlay"></span>
+            </button>
             <div class="navigation">
                 <div class="menuToggle"></div>
                 <div class="menu"></div>
@@ -131,7 +134,7 @@
         <div class="proyecto">
             <a href="{{projects.url}}">
                 <img src="{{projects.image.url}}" alt="{{projects.title}}">
-                <div class="overlay">
+                <div class="overlayportfolio">
                     <h3>{{projects.title}}</h3>
                     <p>{{projects.description}}</p>
                 </div>
@@ -140,8 +143,8 @@
         {% endfor %}
     </div>
 </section>
- <!---------------------------------------------- CONTACTO ---------------------------------------------->
- <section id="contacto" class="contacto">
+<!---------------------------------------------- CONTACTO ---------------------------------------------->
+<section id="contacto" class="contacto">
     <div class="contenido-contacto">
         <h2>CONTACTO</h2>
         <hr>
@@ -154,20 +157,20 @@
                 <input type="text" placeholder="Dirección de correo">
                 <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
                 <button>
-                    Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                    Enviar Mensaje 
                     <span class="overlay"></span>
                 </button>
             </div>
 </section>
-    <!----------------------- footer ----------------------->
-    <footer>
-        <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-        <div class="redes">
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-        </div>
-    </footer>
+<!----------------------- footer ----------------------->
+<footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+    </div>
+</footer>
 {% endblock %}

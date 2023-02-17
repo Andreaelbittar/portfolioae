@@ -34,7 +34,7 @@ html{
     justify-content: center;
     width: 120px;
   }
-  .nav ul li a {
+  .menu{
     text-align: none;
     color: #191919;
     margin: 0 15px;
@@ -44,6 +44,20 @@ html{
     font-family: 'Dorsa', sans-serif;
     font-size: 3em;
   }
+.buttoncv {
+    transition-duration: 0.4s;
+    font-family: 'Dorsa', sans-serif;
+    padding: 3px 3px;
+    margin: 3px;
+    cursor: pointer;
+    font-size: 40px;
+    color: black;
+    width: 10%;
+}
+.buttoncv:hover {
+    background-color: #191919; 
+    color: white;
+}
   .name {
     display: flex;
     padding: 0em 0.5em;
@@ -80,14 +94,14 @@ html{
     }
   }
   /*HOVER*/
-  .nav ul li a:hover {
+  .menu:hover {
     text-decoration: none;
     --nav: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     transition: all .1s;
     font-weight:600;
     letter-spacing:1px;
   }
-  .nav ul li a:after {
+  .menu:after {
     content: "";
     display: block;
     background-color: black;
@@ -390,7 +404,7 @@ html{
     display: block;
     border-radius:50%;
 }
-.overlay{
+.overlayportfolio{
     position: absolute;
     top: 0;
     width:100% ;
@@ -488,7 +502,7 @@ hr {
     position: relative;
     z-index: 10;
 }
-.contacto button .overlay{
+.menu .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -498,7 +512,7 @@ hr {
     z-index: -1;
     transition: 1s;
 }
-.contacto button:hover .overlay{
+.menu:hover .overlay{
     width: 100%;
 }
 .col-form img{
