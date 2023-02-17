@@ -9,15 +9,14 @@
             <li><a class="menu" href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
             <li><a class="menu" href="#skills" onclick="seleccionar()">SKILLS</a></li>
             <div class="name">
-                <h2 class="hola border">Andrea Elbittar</h2>
+                <h2 class="hola border" id="inicio">Andrea Elbittar</h2>
                 <h2 class="wave">Andrea Elbittar</h2>
             </div>
             <li><a class="menu" href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
             <li><a class="menu" href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-            <button class="buttoncv">
-                Descargar CV
-                <span class="overlay"></span>
-            </button>
+            <a href="#" class="buttoncv" download="#rutadelarchivo" target="_blank">
+            Descargar CV
+            </a>
             <div class="navigation">
                 <div class="menuToggle"></div>
                 <div class="menu"></div>
@@ -26,10 +25,10 @@
     </nav>
 </header>
 <!----------------------------------------------  INICIO ---------------------------------------------->
-<section id="inicio ">
+<section >
     <div class="inicio" id="particles-js">
         <div class="banner">
-            <h1 class="title">Andrea Elbittar</h1>
+            <h1 class="title" >Andrea Elbittar</h1>
             <h2 class="description">Ingeniero de Sistemas - Full Stack Developer</h2>
             <div class="redes">
                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -39,11 +38,11 @@
         </div>
     </div>
 </section>
-<!----------------------------------------------  SECCION SKILLS ---------------------------------------------->
+<!----------------------------------------------  SKILLS ---------------------------------------------->
 <section class="skills" id="skills">
     <div class="contenido-seccion">
-        <h2>Skills</h2>
-        <h2>Skills</h2>
+        <h2 class="titleseccion1">SKILLS</h2>
+        <h2 class="titleseccion2">SKILLS</h2>
         <div class="fila">
             <!----------------------- Technical Skill ----------------------->
             <div class="titleskills">SKILLS</div>
@@ -89,7 +88,7 @@
         <div class="fila2">
             <div class="titleskills2">SKILLS</div>
             <div class="col2">
-                <h3>Technical Skills</h3>
+                <h3>Professional Skills</h3>
                 <div class="skill">
                     <span>Javascript</span>
                     <div class="barra-skill">
@@ -156,8 +155,8 @@
                 <input type="text" placeholder="Nombre">
                 <input type="text" placeholder="Dirección de correo">
                 <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <button>
-                    Enviar Mensaje 
+                <button class="buttoncontact">
+                    Enviar Mensaje
                     <span class="overlay"></span>
                 </button>
             </div>
